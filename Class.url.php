@@ -6,8 +6,8 @@
  *-------------------
  * @package   23y4d/CoreShortUrl
  * @author    Zeyad Besiso <zeyad.besiso@gmail.com>
- * @license
- * @link https://github.com/23y4d/CoreShortUrl
+ * @license  https://github.com/23y4d/CoreShortUrl/blob/master/LICENSE
+ * @link     https://github.com/23y4d/CoreShortUrl
  */
 
 use RuntimeException;

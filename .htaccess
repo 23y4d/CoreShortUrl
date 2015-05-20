@@ -1,0 +1,11 @@
+#
+#   @package   htaccess securtiy
+#   @author    Zeyad Besiso <zeyad.besiso@gmail.com>
+#
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+RewriteRule ^([a-zA-Z0-9]+)/?$ r.php?url=$1 [L,QSA]
+

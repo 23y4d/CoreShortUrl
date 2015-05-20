@@ -1,0 +1,29 @@
+{
+    "name": "CoreShortUrl",
+    "description": " Shortener makes it easy to create shortened URLs for your rails application.",
+    "license": "MIT",
+    "version": "1.0.1",
+    "keywords": [
+        "Core",
+        "url",
+        "urls",
+        "Short",
+        "short url"
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+	"autoload": {
+		"classmap": [
+            "CoreUrl",
+            "Config.php",
+			"class.url.php"
+		]
+	},
+    "authors": [
+        {
+            "name": "Zeyad Besiso <23y4d>",
+            "email": "<zeyad.besiso@gmail.com>"
+        }
+    ]
+}

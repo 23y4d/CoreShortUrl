@@ -1,0 +1,58 @@
+
+@import url("settings.css")    all;
+@import url("roboto.min.css")   all;
+@import url("material.min.css") all;
+@import url("ripples.min.css") all;
+
+@font-face {
+  font-family: 'ZeyadFont';
+  src: url(../fonts/RobotoDraftRegular.eot);
+  src: url(../fonts/RobotoDraftRegular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/RobotoDraftRegular.woff2) format('x-woff2'),
+       url(../fonts/RobotoDraftRegular.woff) format('woff'),
+       url(../fonts/RobotoDraftRegular.ttf) format('truetype');
+       font-style: normal;
+  }
+
+body{
+    font-family:'ZeyadFont',Verdana, Geneva, sans-serif;
+    color: #000;
+    background-color:#eceff1;
+}
+
+a,a:hover,
+a:active,a:focus{ text-decoration: none;}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6,{
+  font-family:'ZeyadFont',Verdana, Geneva, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  }
+.navbar-inverse{
+background-color:#607d8b;
+}
+
+.navbar{border:none;background-color:#607d8b;}
+.actives{
+  background-color: #566F7B;
+}
+.navbar-brand{
+/* background: url(../favicon.ico) no-repeat center ;  */
+ text-align: center;
+ width:200px;
+}
+
+.centerfull{
+  text-align:center; margin-top:100px; background-color: rgba(0,0,0,0);
+}
+.bot{
+  padding:    10px;
+  margin-top: 10px;
+}
+.footerCore{
+margin-top:50px;
+text-align: center;
+}
+

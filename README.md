@@ -30,5 +30,7 @@ define('TABLE',' name TABLE do not CREATE');
 ## Author
 * [ZEYAD BESISO](https://github.com/23y4d/)
 
+# [LongLivePalestine]
+
 ## Copyright and license
  Copyright 2015 under [MIT License](LICENSE).

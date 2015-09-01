@@ -221,3 +221,31 @@ class CoreUrl  {
 
 
 }
+
+namespace Core\urlShort\info;
+
+class info {
+    /**
+	 * get ip Url
+	 *
+	 * @access public
+	 * @return static
+	 */
+    public function hostName($r){
+
+      if ($r!=""){
+                $r = explode('/', $r);
+                $r = array_filter($r);
+                $r = array_merge($r, array());
+                $r = preg_replace('/\?.*/', '', $r);
+                $endofurl = $r[1];
+                $fi = gethostbyname($endofurl);
+        echo "$fi<br>";
+      } else {
+        return false;
+        }
+    }
+
+
+
+}

@@ -3,6 +3,7 @@
 include_once 'header.php';
 
 $Short = new Core\urlShort\CoreUrl();
+$ip    =  new Core\urlShort\info\info(); 
 
 if(isset($_POST['shorten'])){
 
@@ -28,6 +29,7 @@ echo <<<EOF
         <button  type="submit"  class="btn btn-flat btn-primary"  name="shorten" >Shorten!</button>
         </form>
 EOF;
+$ip->hostname($url); 
 $Short->processUrl($url);
 $Short->getUrl($url);
 echo '</div>';

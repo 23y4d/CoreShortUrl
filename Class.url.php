@@ -245,7 +245,24 @@ class info {
         return false;
         }
     }
+        /**
+	 * get Dns website
+	 *
+	 * @access public
+	 * @return static
+	 */
+  public function getDns($u){
 
+  $parse = parse_url($u);
+  $domain = isset($parse['host']) ? $parse['host'] : '';
+
+    if (preg_match('/(?P<domain>[a-z0-9][a-z0-9\-]{1,63}\.[a-z\.]{2,6})$/i',$domain,$regs)) {
+            $ip = gethostbyname($regs['domain']);
+            print"Dns: ".gethostbyaddr($ip)."<br><hr>";
+          } else{
+            return false;
+          }
+    }
 
 
 }
